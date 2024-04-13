@@ -25,6 +25,7 @@
     "pre_install":[
         "Copy-Item -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/behinder.cmd) -Destination $(Join-Path $dir behinder.cmd) -Force"
     ],
+    "persist": "data.db",
     "bin": "behinder.cmd",
     "shortcuts": [
         [
