@@ -6,9 +6,6 @@
     "suggest": {
         "JDK": [ "extras/oraclejdk", "openjdk" ]
     },
-    "suggest": {
-        "JDK": [ "extras/oraclejdk", "openjdk" ]
-    },
     "checkver": "github",
     "architecture": {
         "64bit": {
