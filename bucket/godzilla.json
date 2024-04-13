@@ -1,0 +1,37 @@
+{
+    "version": "v4.0.1-godzilla",
+    "description": "哥斯拉",
+    "homepage": "https://github.com/BeichenDream/Godzilla",
+    "license": "Unlicense",
+    "suggest": {
+        "JDK": [ "extras/oraclejdk", "openjdk" ]
+    },
+    "suggest": {
+        "JDK": [ "extras/oraclejdk", "openjdk" ]
+    },
+    "checkver": "github",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/BeichenDream/Godzilla/releases/download/v4.0.1-godzilla/godzilla.jar",
+            "hash": "62b7eff31d339fd04e6d39aba47b5f37b1b6feb27f85c3c71e4d2d600e8142c6"
+        },
+        "32bit": {
+            "url": "https://github.com/BeichenDream/Godzilla/releases/download/v4.0.1-godzilla/godzilla.jar",
+            "hash": "62b7eff31d339fd04e6d39aba47b5f37b1b6feb27f85c3c71e4d2d600e8142c6"
+        },
+        "arm64": {
+            "url": "https://github.com/BeichenDream/Godzilla/releases/download/v4.0.1-godzilla/godzilla.jar",
+            "hash": "62b7eff31d339fd04e6d39aba47b5f37b1b6feb27f85c3c71e4d2d600e8142c6"
+        }
+    },
+    "pre_install":[
+        "Copy-Item -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/godzilla.cmd) -Destination $(Join-Path $dir godzilla.cmd) -Force"
+    ],
+    "bin": "godzilla.cmd",
+    "shortcuts": [
+        [
+            "godzilla.cmd",
+            "Godzilla"
+        ]
+    ]
+}
