@@ -26,5 +26,6 @@
                 "url": "https://yaklang.oss-cn-beijing.aliyuncs.com/yak/$version/Yakit-$version-windows-amd64.exe#/dl.7z"
             }
         }
-    }
+    },
+    "bin": "Yakit.exe"
 }
