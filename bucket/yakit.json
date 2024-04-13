@@ -27,5 +27,11 @@
             }
         }
     },
-    "bin": "Yakit.exe"
+    "bin": "Yakit.exe",
+    "shortcuts": [
+        [
+            "Yakit.exe",
+            "Yakit"
+        ]
+    ]
 }
