@@ -1,5 +1,5 @@
 {
-    "version": "v0.3",
+    "version": "0.3",
     "description": "基于Memprocfs和Volatility的可视化内存取证工具",
     "homepage": "https://github.com/Tokeii0/LovelyMem",
     "license": "Unlicense",

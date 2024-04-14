@@ -1,5 +1,5 @@
 {
-    "version": "v0.0.6",
+    "version": "0.0.6",
     "description": "A proof-of-concept tool for generating payloads that exploit unsafe Java object deserialization.",
     "homepage": "https://github.com/frohoff/ysoserial",
     "license": "MIT",
