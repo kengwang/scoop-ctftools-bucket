@@ -1,0 +1,19 @@
+{
+    "version": "2.6.1",
+    "description": "An advanced memory forensics framework",
+    "homepage": "https://github.com/volatilityfoundation/volatility",
+    "license": "GPL-2.0-only",
+    "checkver": "github",
+    "suggest": {
+        "python": "python"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/volatilityfoundation/volatility/releases/download/2.6.1/volatility-2.6.zip"
+        }
+    },
+    "pre_install":[
+        "Copy-Item -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/volatility2.cmd) -Destination $(Join-Path $dir volatility2.cmd) -Force"
+    ],
+    "bin": "volatility2.cmd"
+}
