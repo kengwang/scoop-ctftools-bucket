@@ -1,0 +1,34 @@
+{
+    "version": "0.92",
+    "license":"Unlicense",
+    "description": "蓝队分析研判工具箱，功能包括内存马反编译分析、各种代码格式化、网空资产测绘功能、溯源辅助、解密冰蝎流量、解密哥斯拉流量、解密Shiro/CAS/Log4j2的攻击payload、IP/端口连接分析、各种编码/解码功能、蓝队分析常用网址、java反序列化数据包分析、Java类名搜索、Fofa搜索、Hunter搜索等。",
+    "homepage": "https://github.com/abc123info/BlueTeamTools",
+    "suggest": {
+        "JDK": [ "extras/oraclejdk", "openjdk" ]
+    },
+    "checkver": "github",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/abc123info/BlueTeamTools/releases/download/v0.92/BlueTeamTools0.92.zip",
+            "hash": "0ef17f6d33b0b35a9a1d501eb925d7a345c90b3796d79e5c7d9108f13a4c16d7"
+        },
+        "32bit": {
+            "url": "https://github.com/abc123info/BlueTeamTools/releases/download/v0.92/BlueTeamTools0.92.zip",
+            "hash": "0ef17f6d33b0b35a9a1d501eb925d7a345c90b3796d79e5c7d9108f13a4c16d7"
+        },
+        "arm64": {
+            "url": "https://github.com/abc123info/BlueTeamTools/releases/download/v0.92/BlueTeamTools0.92.zip",
+            "hash": "0ef17f6d33b0b35a9a1d501eb925d7a345c90b3796d79e5c7d9108f13a4c16d7"
+        }
+    },
+    "pre_install":[
+        "Copy-Item -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/BlueTeamTools.cmd) -Destination $(Join-Path $dir BlueTeamTools.cmd) -Force"
+    ],
+    "bin": "BlueTeamTools.cmd",
+    "shortcuts": [
+        [
+            "BlueTeamTools.cmd",
+            "BlueTeamTools"
+        ]
+    ]
+}
