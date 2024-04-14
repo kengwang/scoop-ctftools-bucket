@@ -1,0 +1,22 @@
+{
+    "version": "2.5.2",
+    "description": "The volatile memory extraction framework",
+    "homepage": "https://github.com/volatilityfoundation/volatility3",
+    "license": "https://github.com/volatilityfoundation/volatility3/blob/develop/LICENSE.txt",
+    "checkver": "github",
+    "suggest": {
+        "python": "python"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/volatilityfoundation/volatility3/archive/refs/tags/v2.5.2.zip"
+        }
+    },
+    "post_install": [
+        "pip3 install -r requirements.txt"
+    ],
+    "pre_install":[
+        "Copy-Item -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/volatility3.cmd) -Destination $(Join-Path $dir volatility3.cmd) -Force"
+    ],
+    "bin": "volatility3.cmd"
+}
