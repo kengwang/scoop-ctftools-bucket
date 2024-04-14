@@ -10,7 +10,8 @@
         }
     },
     "checkver": {
-        "url": "https://yaklang.oss-cn-beijing.aliyuncs.com/yak/latest/yakit-version.txt"
+        "url": "https://yaklang.oss-cn-beijing.aliyuncs.com/yak/latest/yakit-version.txt",
+        "regex": "(.*)"
     },
     "persist":[
         "yakit-projects"

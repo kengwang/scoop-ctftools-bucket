@@ -1,5 +1,5 @@
 {
-    "version": "4.1-t00ls",
+    "version": "4.1",
     "license":"Unlicense",
     "description": "“冰蝎”动态二进制加密网站管理客户端",
     "homepage": "https://github.com/rebeyond/Behinder",
@@ -7,7 +7,10 @@
     "suggest": {
         "JDK": [ "extras/oraclejdk", "openjdk" ]
     },
-    "checkver": "github",
+    "checkver": {
+        "url": "https://github.com/rebeyond/Behinder/releases/latest",
+        "regex": "/releases/tag/.*?(\\d+\\.\\d+)"
+    },
     "architecture": {
         "64bit": {
             "url": "https://github.com/rebeyond/Behinder/releases/download/Behinder_v4.1%E3%80%90t00ls%E4%B8%93%E7%89%88%E3%80%91/Behinder_v4.1.t00ls.zip",
