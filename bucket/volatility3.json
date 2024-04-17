@@ -5,11 +5,13 @@
     "license": "https://github.com/volatilityfoundation/volatility3/blob/develop/LICENSE.txt",
     "checkver": "github",
     "suggest": {
-        "python": "python2"
+        "python": "python"
     },
+    "extract_dir": "volatility3-2.5.2",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/volatilityfoundation/volatility3/archive/refs/tags/v2.5.2.zip"
+            "url": "https://github.com/volatilityfoundation/volatility3/archive/refs/tags/v2.5.2.zip",
+            "hash": "54cb7a3529687e5db53da25b21e12e7c30433f84a3e6b93ce5fede3b788a6882"
         }
     },
     "post_install": [
