@@ -12,5 +12,5 @@
             "url": "https://github.com/sleuthkit/autopsy/releases/download/autopsy-4.21.0/autopsy-4.21.0-64bit.msi"
         }
     },
-    "bin": "autopsy.exe"
+    "bin": "bin/autopsy.exe"
 }
