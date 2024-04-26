@@ -1,29 +1,30 @@
 {
-    "version": "0.3",
+    "version": "0.4",
     "description": "基于Memprocfs和Volatility的可视化内存取证工具",
     "homepage": "https://github.com/Tokeii0/LovelyMem",
     "license": "Unlicense",
     "checkver": "github",
     "suggest": {
-        "python": [ "python" ]
+        "python": "python"
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Tokeii0/LovelyMem/releases/download/v0.3/Lovelymemprocfs.7z",
-            "hash": "415ac30aa77acc2beb98897754c2901df5bd170407313df99172f46ebf906532"
+            "url": "https://github.com/Tokeii0/LovelyMem/releases/download/v0.4/Lovelymemprocfs.v0.4.7z",
+            "hash": "903db378370d7a2f2b1e688869317d875de5417910cf1aec08bea911043a33e0"
         },
         "32bit": {
-            "url": "https://github.com/Tokeii0/LovelyMem/releases/download/v0.3/Lovelymemprocfs.7z",
-            "hash": "415ac30aa77acc2beb98897754c2901df5bd170407313df99172f46ebf906532"
+            "url": "https://github.com/Tokeii0/LovelyMem/releases/download/v0.4/Lovelymemprocfs.v0.4.7z",
+            "hash": "903db378370d7a2f2b1e688869317d875de5417910cf1aec08bea911043a33e0"
         },
         "arm64": {
-            "url": "https://github.com/Tokeii0/LovelyMem/releases/download/v0.3/Lovelymemprocfs.7z",
-            "hash": "415ac30aa77acc2beb98897754c2901df5bd170407313df99172f46ebf906532"
+            "url": "https://github.com/Tokeii0/LovelyMem/releases/download/v0.4/Lovelymemprocfs.v0.4.7z",
+            "hash": "903db378370d7a2f2b1e688869317d875de5417910cf1aec08bea911043a33e0"
         }
     },
-    "pre_install":[
-        "Copy-Item -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/LovelyMem.cmd) -Destination $(Join-Path $dir LovelyMem.cmd) -Force"
-    ],
+    "pre_install": "Copy-Item -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/LovelyMem.cmd) -Destination $(Join-Path $dir LovelyMem.cmd) -Force",
+    "autoupdate": {
+        "url": "https://github.com/Tokeii0/LovelyMem/releases/download/v$version/Lovelymemprocfs.v$version.7z"
+    },
     "bin": "LovelyMem.cmd",
     "shortcuts": [
         [

@@ -23,6 +23,9 @@
     "pre_install":[
         "Copy-Item -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/ysoserial.cmd) -Destination $(Join-Path $dir ysoserial.cmd) -Force"
     ],
+    "autoupdate": {
+        "url": "https://github.com/frohoff/ysoserial/releases/download/v$version/ysoserial-all.jar"
+    },
     "checkver": "github",
     "bin": "ysoserial.cmd"
 }

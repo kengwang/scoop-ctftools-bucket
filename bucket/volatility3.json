@@ -17,6 +17,9 @@
     "post_install": [
         "pip3 install -r requirements.txt"
     ],
+    "autoupdate": {
+        "url": "https://github.com/volatilityfoundation/volatility3/archive/refs/tags/v$version.zip"
+    },
     "pre_install":[
         "Copy-Item -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/volatility3.cmd) -Destination $(Join-Path $dir volatility3.cmd) -Force"
     ],

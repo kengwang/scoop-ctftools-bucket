@@ -13,6 +13,9 @@
             "url": "https://github.com/volatilityfoundation/volatility/releases/download/2.6.1/volatility-2.6.zip"
         }
     },
+    "autoupdate": {
+        "url": "https://github.com/volatilityfoundation/volatility/releases/download/$version/volatility-2.6.zip"
+    },
     "pre_install":[
         "Copy-Item -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/volatility2.cmd) -Destination $(Join-Path $dir volatility2.cmd) -Force"
     ],
