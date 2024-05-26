@@ -4,7 +4,10 @@
     "homepage": "https://github.com/0Chencc/CTFCrackTools",
     "license": "GPL-3.0-or-later",
     "suggest": {
-        "JDK": [ "extras/oraclejdk", "openjdk" ]
+        "JDK": [
+            "extras/oraclejdk",
+            "openjdk"
+        ]
     },
     "checkver": "github",
     "architecture": {
@@ -24,9 +27,7 @@
     "autoupdate": {
         "url": "https://github.com/0Chencc/CTFCrackTools/releases/download/$version/CTFCrackTools.7z"
     },
-    "pre_install":[
-        "Copy-Item -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/CTFCrackTools.cmd) -Destination $(Join-Path $dir CTFCrackTools.cmd) -Force"
-    ],
+    "pre_install": "Copy-Item -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/CTFCrackTools.cmd) -Destination $(Join-Path $dir CTFCrackTools.cmd) -Force",
     "bin": "CTFCrackTools.cmd",
     "shortcuts": [
         [

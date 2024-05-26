@@ -1,11 +1,14 @@
 {
     "version": "4.1",
-    "license":"Unlicense",
+    "license": "Unlicense",
     "description": "“冰蝎”动态二进制加密网站管理客户端",
     "homepage": "https://github.com/rebeyond/Behinder",
     "notes": "",
     "suggest": {
-        "JDK": [ "extras/oraclejdk", "openjdk" ]
+        "JDK": [
+            "extras/oraclejdk",
+            "openjdk"
+        ]
     },
     "checkver": {
         "url": "https://github.com/rebeyond/Behinder/releases/latest",
@@ -25,9 +28,7 @@
             "hash": "1e960d4c1c00fa308fe9da6bfb20764a379cb8cf4b874f2456d19982e6c688c2"
         }
     },
-    "pre_install":[
-        "Copy-Item -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/behinder.cmd) -Destination $(Join-Path $dir behinder.cmd) -Force"
-    ],
+    "pre_install": "Copy-Item -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/behinder.cmd) -Destination $(Join-Path $dir behinder.cmd) -Force",
     "persist": "data.db",
     "bin": "behinder.cmd",
     "shortcuts": [

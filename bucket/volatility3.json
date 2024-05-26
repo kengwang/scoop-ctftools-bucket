@@ -14,14 +14,10 @@
             "hash": "54cb7a3529687e5db53da25b21e12e7c30433f84a3e6b93ce5fede3b788a6882"
         }
     },
-    "post_install": [
-        "pip3 install -r requirements.txt"
-    ],
+    "post_install": "pip3 install -r requirements.txt",
     "autoupdate": {
         "url": "https://github.com/volatilityfoundation/volatility3/archive/refs/tags/v$version.zip"
     },
-    "pre_install":[
-        "Copy-Item -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/volatility3.cmd) -Destination $(Join-Path $dir volatility3.cmd) -Force"
-    ],
+    "pre_install": "Copy-Item -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/volatility3.cmd) -Destination $(Join-Path $dir volatility3.cmd) -Force",
     "bin": "volatility3.cmd"
 }

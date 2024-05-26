@@ -16,12 +16,12 @@
     "autoupdate": {
         "url": "https://github.com/gobysec/Goby/releases/download/Beta$version/goby-win-x64-$version.zip"
     },
-    "pre_install":[
+    "pre_install": [
         "Remove-Item -Path $dir\\goby-win-x64-*\\data -Recurse -Force -ErrorAction Ignore",
         "Remove-Item -Path $dir\\goby-win-x64-*\\config -Recurse -Force -ErrorAction Ignore",
         "Remove-Item -Path $dir\\goby-win-x64-*\\extensions -Recurse -Force -ErrorAction Ignore",
         "Move-Item -Path $dir\\goby-win-x64-*\\* -Destination $dir -Force -ErrorAction Stop",
-        "Remove-Item -Path $dir\\goby-win-x64-* -Force -ErrorAction Stop"
+        "Remove-Item -Path $dir\\goby-win-x64-* -Recurse -Force -ErrorAction Stop"
     ],
     "bin": "Goby.exe",
     "persist": [

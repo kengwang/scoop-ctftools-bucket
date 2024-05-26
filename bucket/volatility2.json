@@ -10,14 +10,13 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/volatilityfoundation/volatility/releases/download/2.6.1/volatility-2.6.zip"
+            "url": "https://github.com/volatilityfoundation/volatility/releases/download/2.6.1/volatility-2.6.zip",
+            "hash": "5b73050d72bf94870ffce22843f03d4b0b7764011dec29ef1a0a5b1b46cf9295"
         }
     },
     "autoupdate": {
         "url": "https://github.com/volatilityfoundation/volatility/releases/download/$version/volatility-2.6.zip"
     },
-    "pre_install":[
-        "Copy-Item -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/volatility2.cmd) -Destination $(Join-Path $dir volatility2.cmd) -Force"
-    ],
+    "pre_install": "Copy-Item -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/volatility2.cmd) -Destination $(Join-Path $dir volatility2.cmd) -Force",
     "bin": "volatility2.cmd"
 }
