@@ -22,6 +22,8 @@
         }
     },
     "pre_install": [
+        "Move-Item -Path $dir\\commix-*\\* -Destination $dir -Force -ErrorAction Stop",
+        "Remove-Item -Path $dir\\commix-* -Recurse -Force -ErrorAction Stop",
         "$content = (Get-Content -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/commix.cmd)) -replace '%%HOME%%', $dir",
         "Set-Content -Path $(Join-Path $dir commix.cmd) -Value $content -Encoding UTF8"
     ],
