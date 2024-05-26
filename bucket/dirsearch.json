@@ -1,6 +1,6 @@
 {
-    "version": "2.5.2",
-    "description": "The volatile memory extraction framework",
+    "version": "0.4.3",
+    "description": "Web path scanner",
     "homepage": "https://github.com/maurosoria/dirsearch",
     "license": "GPL-2.0-only",
     "checkver": "github",
