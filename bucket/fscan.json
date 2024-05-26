@@ -1,0 +1,60 @@
+{
+    "version": "1.8.4",
+    "license": "MIT",
+    "description": "一款内网综合扫描工具，方便一键自动化、全方位漏扫扫描。",
+    "homepage": "https://github.com/shadow1ng/fscan",
+    "checkver": "github",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/shadow1ng/fscan/releases/download/1.8.4/fscan.exe",
+            "hash": "7b9efc7ef8957411cdd22582ce4bfb3a5f76d9c91cdb7e36bf85c9785a2480e9"
+        },
+        "32bit": {
+            "url": "https://github.com/shadow1ng/fscan/releases/download/1.8.4/fscan32.exe",
+            "hash": "612d940023d8530377f0571cb839d667e172dcbe307878ffd31b20f534c1169d"
+        },
+        "arm64": {
+            "url": "https://github.com/shadow1ng/fscan/releases/download/1.8.4/fscan_arm64.exe",
+            "hash": "a10ce4f737078a7f06f9fed5c6a805f57245a429fecad7fa98224daec5b6d8a5"
+        }
+    },
+    "pre_install": [
+        "# Download All Version",
+        "$prefix = \"https://github.com/shadow1ng/fscan/releases/download/$version\"",
+        "Invoke-WebRequest -Uri \"$prefix/fscan\" -OutFile (Join-Path $dir fscan)",
+        "Invoke-WebRequest -Uri \"$prefix/fscan.exe\" -OutFile (Join-Path $dir fscan.exe)",
+        "Invoke-WebRequest -Uri \"$prefix/fscan32\" -OutFile (Join-Path $dir fscan32)",
+        "Invoke-WebRequest -Uri \"$prefix/fscan32.exe\" -OutFile (Join-Path $dir fscan32.exe)",
+        "Invoke-WebRequest -Uri \"$prefix/fscan_arm64\" -OutFile (Join-Path $dir fscan_arm64)",
+        "Invoke-WebRequest -Uri \"$prefix/fscan_arm64.exe\" -OutFile (Join-Path $dir fscan_arm64.exe)",
+        "Invoke-WebRequest -Uri \"$prefix/fscan_armv6\" -OutFile (Join-Path $dir fscan_armv6)",
+        "Invoke-WebRequest -Uri \"$prefix/fscan_armv6.exe\" -OutFile (Join-Path $dir fscan_armv6.exe)",
+        "Invoke-WebRequest -Uri \"$prefix/fscan_armv7\" -OutFile (Join-Path $dir fscan_armv7)",
+        "Invoke-WebRequest -Uri \"$prefix/fscan_armv7.exe\" -OutFile (Join-Path $dir fscan_armv7.exe)",
+        "Invoke-WebRequest -Uri \"$prefix/fscan_freebsd\" -OutFile (Join-Path $dir fscan_freebsd)",
+        "Invoke-WebRequest -Uri \"$prefix/fscan_freebsd32\" -OutFile (Join-Path $dir fscan_freebsd32)",
+        "Invoke-WebRequest -Uri \"$prefix/fscan_freebsd_arm64\" -OutFile (Join-Path $dir fscan_freebsd_arm64)",
+        "Invoke-WebRequest -Uri \"$prefix/fscan_freebsd_armv6\" -OutFile (Join-Path $dir fscan_freebsd_armv6)",
+        "Invoke-WebRequest -Uri \"$prefix/fscan_freebsd_armv7\" -OutFile (Join-Path $dir fscan_freebsd_armv7)",
+        "Invoke-WebRequest -Uri \"$prefix/fscan_mac\" -OutFile (Join-Path $dir fscan_mac)",
+        "Invoke-WebRequest -Uri \"$prefix/fscan_mac_arm64\" -OutFile (Join-Path $dir fscan_mac_arm64)",
+        "Invoke-WebRequest -Uri \"$prefix/fscan_mips\" -OutFile (Join-Path $dir fscan_mips)",
+        "Invoke-WebRequest -Uri \"$prefix/fscan_mips64\" -OutFile (Join-Path $dir fscan_mips64)",
+        "Invoke-WebRequest -Uri \"$prefix/fscan_mipsle\" -OutFile (Join-Path $dir fscan_mipsle)",
+        "Invoke-WebRequest -Uri \"$prefix/fscan_solaris\" -OutFile (Join-Path $dir fscan_solaris)"
+    ],
+    "bin": "fscan.exe",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/shadow1ng/fscan/releases/download/$version/fscan.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/shadow1ng/fscan/releases/download/$version/fscan32.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/shadow1ng/fscan/releases/download/$version/fscan_arm64.exe"
+            }
+        }
+    }
+}
