@@ -18,6 +18,9 @@
             "hash": "b5666fc4070a1c5b18d0dab0fd133d8aa37ecfde3ec7adfb89453d79795a67dc"
         }
     },
+    "persist":[
+        "antData"
+    ],
     "pre_install": [
         "Move-Item -Path $dir\\antSword-*\\* -Destination $dir -Force -ErrorAction Stop",
         "Remove-Item -Path $dir\\antSword-* -Recurse -Force -ErrorAction Stop"
