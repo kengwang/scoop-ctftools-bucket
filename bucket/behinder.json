@@ -29,7 +29,7 @@
         }
     },
     "pre_install": [
-        "$content = (Get-Content -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/behinder.cmd)) -replace '%%HOME%%', $dir",
+        "$content = (Get-Content -Path $(Join-Path $(Find-BucketDirectory -Root -Name ctftools) starters/behinder.cmd)) -replace '%%HOME%%', $dir",
         "Set-Content -Path $(Join-Path $dir behinder.cmd) -Value $content -Encoding UTF8"
     ],
     "persist": "data.db",

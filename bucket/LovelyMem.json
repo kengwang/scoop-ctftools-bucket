@@ -22,7 +22,7 @@
         }
     },
     "pre_install": [
-        "$content = (Get-Content -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/LovelyMem.cmd)) -replace '%%HOME%%', $dir",
+        "$content = (Get-Content -Path $(Join-Path $(Find-BucketDirectory -Root -Name ctftools) starters/LovelyMem.cmd)) -replace '%%HOME%%', $dir",
         "Set-Content -Path $(Join-Path $dir LovelyMem.cmd) -Value $content -Encoding UTF8"
     ],
     "autoupdate": {

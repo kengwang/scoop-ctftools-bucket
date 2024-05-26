@@ -1,6 +1,6 @@
 param(
     # overwrite upstream param
-    [String]$upstream = "kengwang/scoop-security-bucket:main"
+    [String]$upstream = "kengwang/scoop-ctftools-bucket:main"
 )
 
 if (!$env:SCOOP_HOME) { $env:SCOOP_HOME = Convert-Path (scoop prefix scoop) }
