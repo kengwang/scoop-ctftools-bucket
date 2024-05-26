@@ -22,7 +22,8 @@
         "url": "https://github.com/gchq/CyberChef/releases/download/v$version/CyberChef_v$version.zip"
     },
     "pre_install": [
-        "Copy-Item -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/cyberchef.cmd) -Destination $(Join-Path $dir cyberchef.cmd) -Force",
+        "$content = (Get-Content -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/cyberchef.cmd)) -replace '%%HOME%%', $dir",
+        "Set-Content -Path $(Join-Path $dir cyberchef.cmd) -Value $content -Encoding UTF8",
         "Move-Item -Path $(Join-Path $dir CyberChef*.html) -Destination $(Join-Path $dir cyberchef.html) -Force"
     ],
     "bin": "cyberchef.cmd",

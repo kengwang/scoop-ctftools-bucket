@@ -1,2 +1,1 @@
-cd /d %~dp0
-java -jar ./ysoserial-all.jar %*
+java -jar "%%HOME%%/ysoserial-all.jar" %*

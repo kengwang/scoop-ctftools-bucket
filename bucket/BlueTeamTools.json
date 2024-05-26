@@ -27,7 +27,10 @@
     "autoupdate": {
         "url": "https://github.com/abc123info/BlueTeamTools/releases/download/v$version/BlueTeamTools$version.zip"
     },
-    "pre_install": "Copy-Item -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/BlueTeamTools.cmd) -Destination $(Join-Path $dir BlueTeamTools.cmd) -Force",
+    "pre_install": [
+        "$content = (Get-Content -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/BlueTeamTools.cmd)) -replace '%%HOME%%', $dir",
+        "Set-Content -Path $(Join-Path $dir BlueTeamTools.cmd) -Value $content -Encoding UTF8"
+    ],
     "bin": "BlueTeamTools.cmd",
     "shortcuts": [
         [

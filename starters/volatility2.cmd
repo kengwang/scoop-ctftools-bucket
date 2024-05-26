@@ -1,2 +1,1 @@
-cd /d %~dp0
-python2 vol.py %*
+python2 "%%HOME/vol.py" %*

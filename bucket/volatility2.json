@@ -17,6 +17,9 @@
     "autoupdate": {
         "url": "https://github.com/volatilityfoundation/volatility/releases/download/$version/volatility-2.6.zip"
     },
-    "pre_install": "Copy-Item -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/volatility2.cmd) -Destination $(Join-Path $dir volatility2.cmd) -Force",
+    "pre_install": [
+        "$content = (Get-Content -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/volatility2.cmd)) -replace '%%HOME%%', $dir",
+        "Set-Content -Path $(Join-Path $dir volatility2.cmd) -Value $content -Encoding UTF8"
+    ],
     "bin": "volatility2.cmd"
 }

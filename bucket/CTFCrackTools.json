@@ -27,7 +27,10 @@
     "autoupdate": {
         "url": "https://github.com/0Chencc/CTFCrackTools/releases/download/$version/CTFCrackTools.7z"
     },
-    "pre_install": "Copy-Item -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/CTFCrackTools.cmd) -Destination $(Join-Path $dir CTFCrackTools.cmd) -Force",
+    "pre_install": [
+        "$content = (Get-Content -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/CTFCrackTools.cmd)) -replace '%%HOME%%', $dir",
+        "Set-Content -Path $(Join-Path $dir CTFCrackTools.cmd) -Value $content -Encoding UTF8"
+    ],
     "bin": "CTFCrackTools.cmd",
     "shortcuts": [
         [

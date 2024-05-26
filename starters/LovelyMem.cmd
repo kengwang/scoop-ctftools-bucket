@@ -1,2 +1,1 @@
-cd /d %~dp0
-python main.py
+python "%%HOME%%/main.py"
