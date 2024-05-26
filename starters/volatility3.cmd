@@ -1,1 +1,1 @@
-python3 "%%HOME/vol.py" %*
+python3 "%%HOME%%/vol.py" %*
