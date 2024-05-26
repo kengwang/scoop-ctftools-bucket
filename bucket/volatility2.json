@@ -19,7 +19,11 @@
     },
     "pre_install": [
         "$content = (Get-Content -Path $(Join-Path $(Find-BucketDirectory -Root -Name security) starters/volatility2.cmd)) -replace '%%HOME%%', $dir",
-        "Set-Content -Path $(Join-Path $dir volatility2.cmd) -Value $content -Encoding UTF8"
+        "Set-Content -Path $(Join-Path $dir volatility2.cmd) -Value $content -Encoding UTF8",
+        "Set-Content -Path $(Join-Path $dir vol2.cmd) -Value $content -Encoding UTF8"
     ],
-    "bin": "volatility2.cmd"
+    "bin": [
+        "volatility2.cmd",
+        "vol2.cmd"
+    ]
 }
