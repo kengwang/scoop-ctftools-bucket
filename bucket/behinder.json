@@ -3,7 +3,6 @@
     "license": "Unlicense",
     "description": "“冰蝎”动态二进制加密网站管理客户端",
     "homepage": "https://github.com/rebeyond/Behinder",
-    "notes": "",
     "suggest": {
         "JDK": [
             "extras/oraclejdk",
