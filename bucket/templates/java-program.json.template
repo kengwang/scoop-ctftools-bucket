@@ -1,0 +1,52 @@
+{
+    "version": "",
+    "license": "",
+    "description": "",
+    "homepage": "",
+    "suggest": {
+        "JDK": [
+            "extras/oraclejdk",
+            "openjdk"
+        ]
+    },
+    "checkver": "github",
+    "architecture": {
+        "64bit": {
+            "url": "",
+            "hash": ""
+        },
+        "32bit": {
+            "url": "",
+            "hash": ""
+        },
+        "arm64": {
+            "url": "",
+            "hash": ""
+        }
+    },
+    "pre_install": [
+        "$content = (Get-Content -Path $(Join-Path $(Find-BucketDirectory -Root -Name ctftools) starters/app.cmd)) -replace '%%HOME%%', $dir",
+        "Set-Content -Path $(Join-Path $dir app.cmd) -Value $content -Encoding UTF8"
+    ],
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": ""
+            },
+            "32bit": {
+                "url": ""
+            },
+            "arm64": {
+                "url": ""
+            }
+        }
+    },
+    "persist": "",
+    "bin": "app.cmd",
+    "shortcuts": [
+        [
+            "app.cmd",
+            "App"
+        ]
+    ]
+}
