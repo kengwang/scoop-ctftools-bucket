@@ -1,5 +1,5 @@
 {
-    "version": "2.5.2",
+    "version": "2.7.0",
     "description": "The volatile memory extraction framework",
     "homepage": "https://github.com/volatilityfoundation/volatility3",
     "license": "https://github.com/volatilityfoundation/volatility3/blob/develop/LICENSE.txt",
@@ -9,8 +9,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/volatilityfoundation/volatility3/archive/refs/tags/v2.5.2.zip",
-            "hash": "54cb7a3529687e5db53da25b21e12e7c30433f84a3e6b93ce5fede3b788a6882"
+            "url": "https://github.com/volatilityfoundation/volatility3/archive/refs/tags/v2.7.0.zip",
+            "hash": "c5e8ed567e7f792f298501cc2c39edc5e064a6be9fd4c574a75e9c5d3ada3ab9"
         }
     },
     "post_install": "pip3 install -r (Join-Path $dir \"requirements.txt\")",
