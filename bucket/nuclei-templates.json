@@ -23,7 +23,7 @@
     ],
     "post_install":[
         "if (Test-Path (Join-Path $env:USERPROFILE nuclei-templates)) { Remove-Item -Path (Join-Path $env:USERPROFILE nuclei-templates) -Recurse -Force }",
-        "New-Item -ItemType SymbolicLink -Path (Join-Path $env:USERPROFILE nuclei-templates) -Value (Join-Path $dir nuclei-templates) -Force"
+        "New-Item -ItemType SymbolicLink -Path (Join-Path $env:USERPROFILE nuclei-templates) -Value $dir -Force"
     ],
     "post_uninstall":[
         "if (Test-Path (Join-Path $env:USERPROFILE nuclei-templates)) { Remove-Item -Path (Join-Path $env:USERPROFILE nuclei-templates) -Recurse -Force }"
