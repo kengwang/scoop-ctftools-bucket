@@ -19,9 +19,14 @@
         }
     },
     "pre_install": [
-        "Move-Item -Path (Join-Path $dir nuclei-templates*/*) -Destination $dir",
+        "Move-Item -Path (Join-Path $dir nuclei-templates*/*) -Destination $dir"
+    ],
+    "post_install":[
         "if (Test-Path (Join-Path $env:USERPROFILE nuclei-templates)) { Remove-Item -Path (Join-Path $env:USERPROFILE nuclei-templates) -Recurse -Force }",
         "New-Item -ItemType SymbolicLink -Path (Join-Path $env:USERPROFILE nuclei-templates) -Value (Join-Path $dir nuclei-templates) -Force"
+    ],
+    "post_uninstall":[
+        "if (Test-Path (Join-Path $env:USERPROFILE nuclei-templates)) { Remove-Item -Path (Join-Path $env:USERPROFILE nuclei-templates) -Recurse -Force }"
     ],
     "autoupdate": {
         "architecture": {
