@@ -1,0 +1,1 @@
+python "%%HOME%%/sqlmap.py" %*
