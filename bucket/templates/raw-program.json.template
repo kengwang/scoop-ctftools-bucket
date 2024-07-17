@@ -1,0 +1,42 @@
+{
+    "version": "",
+    "license": "",
+    "description": "",
+    "homepage": "",
+    "checkver": "github",
+    "architecture": {
+        "64bit": {
+            "url": "",
+            "hash": ""
+        },
+        "32bit": {
+            "url": "",
+            "hash": ""
+        },
+        "arm64": {
+            "url": "",
+            "hash": ""
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": ""
+            },
+            "32bit": {
+                "url": ""
+            },
+            "arm64": {
+                "url": ""
+            }
+        }
+    },
+    "persist": "",
+    "bin": "app",
+    "shortcuts": [
+        [
+            "app",
+            "App"
+        ]
+    ]
+}
