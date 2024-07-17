@@ -3,7 +3,6 @@
     "license": "MIT",
     "description": "Fast and customizable vulnerability scanner based on simple YAML based DSL.",
     "homepage": "https://github.com/projectdiscovery/nuclei",
-    "depends": "nuclei-templates",
     "checkver": "github",
     "architecture": {
         "64bit": {
