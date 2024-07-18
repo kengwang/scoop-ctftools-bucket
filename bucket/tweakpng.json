@@ -19,7 +19,7 @@
             "hash": "fcda6b36722daa4d5a26f1262e5ec5054120d83b82e39603c23b1e82a29b08a6"
         }
     },
-    "checkver":{
+    "checkver": {
         "url": "https://entropymine.com/jason/tweakpng/",
         "regex": "tweakpng-(.*?).zip"
     },

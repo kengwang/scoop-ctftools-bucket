@@ -120,10 +120,8 @@
             ]
         }
     },
-    "bin":"stowaway-admin.exe",
-    "pre_install":[
-        "Copy-Item -Path $(Join-Path $dir windows_x64_admin.exe) -Destination $(Join-Path $dir stowaway-admin.exe) -Force"
-    ],
+    "bin": "stowaway-admin.exe",
+    "pre_install": "Copy-Item -Path $(Join-Path $dir windows_x64_admin.exe) -Destination $(Join-Path $dir stowaway-admin.exe) -Force",
     "autoupdate": {
         "architecture": {
             "64bit": {

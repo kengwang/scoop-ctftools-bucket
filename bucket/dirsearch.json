@@ -31,7 +31,5 @@
         "$content = (Get-Content -Path $(Join-Path $(Find-BucketDirectory -Root -Name ctftools) starters/dirsearch.cmd)) -replace '%%HOME%%', $dir",
         "Set-Content -Path $(Join-Path $dir dirsearch.cmd) -Value $content -Encoding UTF8"
     ],
-    "bin": [
-        "dirsearch.cmd"
-    ]
+    "bin": "dirsearch.cmd"
 }
