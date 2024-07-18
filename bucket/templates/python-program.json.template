@@ -1,0 +1,26 @@
+{
+    "version": "",
+    "description": "",
+    "homepage": "",
+    "license": "",
+    "checkver": "github",
+    "suggest": {
+        "python": "python"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "",
+            "hash": ""
+        }
+    },
+    "autoupdate": {
+        "url": ""
+    },
+    "pre_install": [
+        "$content = (Get-Content -Path $(Join-Path $(Find-BucketDirectory -Root -Name ctftools) starters/app.cmd)) -replace '%%HOME%%', $dir",
+        "Set-Content -Path $(Join-Path $dir app.cmd) -Value $content -Encoding UTF8"
+    ],
+    "bin": [
+        "app.cmd"
+    ]
+}
