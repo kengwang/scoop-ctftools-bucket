@@ -1,0 +1,27 @@
+{
+    "version": "813c68a4229f43c65a1353fcab98a3ba553bbb71",
+    "description": "exec BashCommand with only ! # $ ' ( ) < \\ { } just 10 charset used in Bypass or CTF",
+    "homepage": "https://github.com/ProbiusOfficial/bashFuck",
+    "license": "Apache-2.0",
+    "checkver": {
+        "url": "https://github.com/ProbiusOfficial/bashFuck/commits/main",
+        "regex": "href=\"/ProbiusOfficial/bashFuck/commit/([0-9a-f]+)\""
+    },
+    "suggest": {
+        "python": "python"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/ProbiusOfficial/bashFuck/archive/813c68a4229f43c65a1353fcab98a3ba553bbb71.zip",
+            "hash": "6e20309f04be5846631704ff7b00d254f148681dc5b79cef599e309fc76022e8"
+        }
+    },
+    "autoupdate": {
+        "url": "https://github.com/ProbiusOfficial/bashFuck/archive/$version.zip"
+    },
+    "pre_install": [
+        "$content = (Get-Content -Path $(Join-Path $(Find-BucketDirectory -Root -Name ctftools) starters/bashfuck.cmd)) -replace '%%HOME%%', $dir",
+        "Set-Content -Path $(Join-Path $dir bashfuck.cmd) -Value $content -Encoding UTF8"
+    ],
+    "bin": "bashfuck.cmd"
+}
