@@ -4,6 +4,7 @@
     "description": "👻Stowaway -- Multi-hop Proxy Tool for pentesters",
     "homepage": "https://github.com/ph4ntonn/Stowaway",
     "checkver": "github",
+    "depends": "ansicon",
     "architecture": {
         "64bit": {
             "url": [
@@ -22,7 +23,8 @@
                 "https://github.com/ph4ntonn/Stowaway/releases/download/v2.2/windows_x64_admin.exe",
                 "https://github.com/ph4ntonn/Stowaway/releases/download/v2.2/windows_x64_agent.exe",
                 "https://github.com/ph4ntonn/Stowaway/releases/download/v2.2/windows_x86_admin.exe",
-                "https://github.com/ph4ntonn/Stowaway/releases/download/v2.2/windows_x86_agent.exe"
+                "https://github.com/ph4ntonn/Stowaway/releases/download/v2.2/windows_x86_agent.exe",
+                "https://github.com/ph4ntonn/Stowaway/raw/master/README.md"
             ],
             "hash": [
                 "60b669ebdac64582d87f1a681dbe7bc51fd2efd8b4dd805fcb1bed8829899074",
@@ -40,7 +42,8 @@
                 "90e84c4528f0b9c773ecefb8ae09e8fe9cda9e01a20247ed50aa253ce6f7071d",
                 "d8e272f50e1d699870a74f8cbed06a9371212c208bcfa8b3c992a4744e84ed87",
                 "efe712b152e0edd0e11b98f1a7687825959f682d6d9fc1a9765dde6109b7e26d",
-                "710d8bc1dba4a8e75c90ea989bef387d1aae97087d17b558f9a1fa42b70fa52e"
+                "710d8bc1dba4a8e75c90ea989bef387d1aae97087d17b558f9a1fa42b70fa52e",
+                "32fbef9c8c83925d318d088445155cd5de8384867c68d5eaa2d37d9743687901"
             ]
         },
         "32bit": {
@@ -60,7 +63,8 @@
                 "https://github.com/ph4ntonn/Stowaway/releases/download/v2.2/windows_x64_admin.exe",
                 "https://github.com/ph4ntonn/Stowaway/releases/download/v2.2/windows_x64_agent.exe",
                 "https://github.com/ph4ntonn/Stowaway/releases/download/v2.2/windows_x86_admin.exe",
-                "https://github.com/ph4ntonn/Stowaway/releases/download/v2.2/windows_x86_agent.exe"
+                "https://github.com/ph4ntonn/Stowaway/releases/download/v2.2/windows_x86_agent.exe",
+                "https://github.com/ph4ntonn/Stowaway/raw/master/README.md"
             ],
             "hash": [
                 "60b669ebdac64582d87f1a681dbe7bc51fd2efd8b4dd805fcb1bed8829899074",
@@ -78,7 +82,8 @@
                 "90e84c4528f0b9c773ecefb8ae09e8fe9cda9e01a20247ed50aa253ce6f7071d",
                 "d8e272f50e1d699870a74f8cbed06a9371212c208bcfa8b3c992a4744e84ed87",
                 "efe712b152e0edd0e11b98f1a7687825959f682d6d9fc1a9765dde6109b7e26d",
-                "710d8bc1dba4a8e75c90ea989bef387d1aae97087d17b558f9a1fa42b70fa52e"
+                "710d8bc1dba4a8e75c90ea989bef387d1aae97087d17b558f9a1fa42b70fa52e",
+                "32fbef9c8c83925d318d088445155cd5de8384867c68d5eaa2d37d9743687901"
             ]
         },
         "arm64": {
@@ -98,7 +103,8 @@
                 "https://github.com/ph4ntonn/Stowaway/releases/download/v2.2/windows_x64_admin.exe",
                 "https://github.com/ph4ntonn/Stowaway/releases/download/v2.2/windows_x64_agent.exe",
                 "https://github.com/ph4ntonn/Stowaway/releases/download/v2.2/windows_x86_admin.exe",
-                "https://github.com/ph4ntonn/Stowaway/releases/download/v2.2/windows_x86_agent.exe"
+                "https://github.com/ph4ntonn/Stowaway/releases/download/v2.2/windows_x86_agent.exe",
+                "https://github.com/ph4ntonn/Stowaway/raw/master/README.md"
             ],
             "hash": [
                 "60b669ebdac64582d87f1a681dbe7bc51fd2efd8b4dd805fcb1bed8829899074",
@@ -116,7 +122,8 @@
                 "90e84c4528f0b9c773ecefb8ae09e8fe9cda9e01a20247ed50aa253ce6f7071d",
                 "d8e272f50e1d699870a74f8cbed06a9371212c208bcfa8b3c992a4744e84ed87",
                 "efe712b152e0edd0e11b98f1a7687825959f682d6d9fc1a9765dde6109b7e26d",
-                "710d8bc1dba4a8e75c90ea989bef387d1aae97087d17b558f9a1fa42b70fa52e"
+                "710d8bc1dba4a8e75c90ea989bef387d1aae97087d17b558f9a1fa42b70fa52e",
+                "32fbef9c8c83925d318d088445155cd5de8384867c68d5eaa2d37d9743687901"
             ]
         }
     },
@@ -141,7 +148,8 @@
                     "https://github.com/ph4ntonn/Stowaway/releases/download/$version/windows_x64_admin.exe",
                     "https://github.com/ph4ntonn/Stowaway/releases/download/$version/windows_x64_agent.exe",
                     "https://github.com/ph4ntonn/Stowaway/releases/download/$version/windows_x86_admin.exe",
-                    "https://github.com/ph4ntonn/Stowaway/releases/download/$version/windows_x86_agent.exe"
+                    "https://github.com/ph4ntonn/Stowaway/releases/download/$version/windows_x86_agent.exe",
+                    "https://github.com/ph4ntonn/Stowaway/raw/master/README.md"
                 ]
             },
             "32bit": {
@@ -161,7 +169,8 @@
                     "https://github.com/ph4ntonn/Stowaway/releases/download/$version/windows_x64_admin.exe",
                     "https://github.com/ph4ntonn/Stowaway/releases/download/$version/windows_x64_agent.exe",
                     "https://github.com/ph4ntonn/Stowaway/releases/download/$version/windows_x86_admin.exe",
-                    "https://github.com/ph4ntonn/Stowaway/releases/download/$version/windows_x86_agent.exe"
+                    "https://github.com/ph4ntonn/Stowaway/releases/download/$version/windows_x86_agent.exe",
+                    "https://github.com/ph4ntonn/Stowaway/raw/master/README.md"
                 ]
             },
             "arm64": {
@@ -181,7 +190,8 @@
                     "https://github.com/ph4ntonn/Stowaway/releases/download/$version/windows_x64_admin.exe",
                     "https://github.com/ph4ntonn/Stowaway/releases/download/$version/windows_x64_agent.exe",
                     "https://github.com/ph4ntonn/Stowaway/releases/download/$version/windows_x86_admin.exe",
-                    "https://github.com/ph4ntonn/Stowaway/releases/download/$version/windows_x86_agent.exe"
+                    "https://github.com/ph4ntonn/Stowaway/releases/download/$version/windows_x86_agent.exe",
+                    "https://github.com/ph4ntonn/Stowaway/raw/master/README.md"
                 ]
             }
         }
