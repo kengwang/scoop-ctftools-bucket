@@ -1,4 +1,4 @@
-# Scoop ctftools Docker
+# Scoop ctftools Bucket
 
 Easily install ctftools tools with Scoop.
 
