@@ -18,5 +18,8 @@
         "$content = (Get-Content -Path $(Join-Path $(Find-BucketDirectory -Root -Name ctftools) starters/jwt_tool.cmd)) -replace '%%HOME%%', $dir",
         "Set-Content -Path $(Join-Path $dir jwt_tool.cmd) -Value $content -Encoding UTF8"
     ],
+    "post_install": [
+        "pip install -r $(Join-Path $dir requirements.txt)"
+    ],
     "bin": "jwt_tool.cmd"
 }
