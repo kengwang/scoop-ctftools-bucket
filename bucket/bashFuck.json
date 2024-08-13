@@ -1,5 +1,5 @@
 {
-    "version": "813c68a4229f43c65a1353fcab98a3ba553bbb71",
+    "version": "75eaebbe8eb2a29e1b96f02fa51cd27b74abb318",
     "description": "exec BashCommand with only ! # $ ' ( ) < \\ { } just 10 charset used in Bypass or CTF",
     "homepage": "https://github.com/ProbiusOfficial/bashFuck",
     "license": "Apache-2.0",
@@ -12,9 +12,9 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ProbiusOfficial/bashFuck/archive/813c68a4229f43c65a1353fcab98a3ba553bbb71.zip",
-            "hash": "6e20309f04be5846631704ff7b00d254f148681dc5b79cef599e309fc76022e8",
-            "extract_dir": "bashFuck-813c68a4229f43c65a1353fcab98a3ba553bbb71"
+            "url": "https://github.com/ProbiusOfficial/bashFuck/archive/75eaebbe8eb2a29e1b96f02fa51cd27b74abb318.zip",
+            "hash": "d0fa0e299ad2479551a506a67923ff405819f775d676aa0a3b452606ea73999d",
+            "extract_dir": "bashFuck-75eaebbe8eb2a29e1b96f02fa51cd27b74abb318"
         }
     },
     "autoupdate": {
