@@ -1,12 +1,12 @@
 {
-    "version": "1.3.4-sp7",
+    "version": "1.3.4-823",
     "description": "Cyber ctftools ALL-IN-ONE Platform",
     "homepage": "https://www.yaklang.io/",
     "license": "AGPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://yaklang.oss-cn-beijing.aliyuncs.com/yak/1.3.4-sp7/Yakit-1.3.4-sp7-windows-amd64.exe#/dl.7z",
-            "hash": "6f2dee310fc19af237bbe6589453cf0ac256937dd9e1b8847b1e86fbd5731ab9",
+            "url": "https://yaklang.oss-cn-beijing.aliyuncs.com/yak/1.3.4-823/Yakit-1.3.4-823-windows-amd64.exe#/dl.7z",
+            "hash": "a965903b4d41ef8b52d872c8ffd3a490dde3a30bd568f612249e04cb38277c4b",
             "extract_dir": "$PLUGINSDIR"
         }
     },
