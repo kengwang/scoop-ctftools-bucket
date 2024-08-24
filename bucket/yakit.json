@@ -11,8 +11,9 @@
         }
     },
     "checkver": {
-        "url": "https://yaklang.oss-cn-beijing.aliyuncs.com/yak/latest/yakit-version.txt",
-        "regex": "(.*)"
+        "url": "https://www.yaklang.com/api/yak/versions/info",
+        "jsonpath": "$.data[0].content",
+        "regex": "version\":\"(.*?)\""
     },
     "persist": "yakit-projects",
     "pre_install": [
