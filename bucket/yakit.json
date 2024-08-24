@@ -13,7 +13,7 @@
     "checkver": {
         "url": "https://www.yaklang.com/api/yak/versions/info",
         "jsonpath": "$.data[0].content",
-        "regex": "version\":\"(.*?)\""
+        "regex": "version\":\"v?(.*?)\""
     },
     "persist": "yakit-projects",
     "pre_install": [
