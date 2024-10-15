@@ -67,6 +67,7 @@
         "}",
         "Set-Content -Path $loaderpath -Value $loader -Force",
         "$package = Get-Content -Path (Join-Path $apppath 'package.json') -Raw | ConvertFrom-Json",
+        "$package.main = './application/app_launcher/index.js'",
         "Set-Content -Path (Join-Path $apppath 'package.json') -Value ($package | ConvertTo-Json -Depth 10) -Force"
     ],
     "post_uninstall":[
