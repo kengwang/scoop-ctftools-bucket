@@ -71,10 +71,24 @@
         "Set-Content -Path (Join-Path $apppath 'package.json') -Value ($package | ConvertTo-Json -Depth 10) -Force"
     ],
     "post_uninstall":[
+        "$qqpath = Get-ItemPropertyValue -Path 'HKLM:\\SOFTWARE\\WOW6432Node\\Tencent\\QQNT' -Name 'Install'",
+        "if (-not (Test-Path $qqpath)) {",
+        "    Write-Host '未找到 QQNT 安装目录，无法自动安装 LiteLoaderQQNT 插件加载器'",
+        "    return",
+        "}",
+        "Remove-Item (Join-Path $qqpath 'dbghelp.dll') -Force",
+        "$apppath = Join-Path $qqpath 'resources/app'",
+        "$versionpath = Join-Path $qqpath 'versions'",
+        "if (Test-Path $versionpath) {",
+        "    # get the subfolder with the highest version number",
+        "    $version = Get-ChildItem -Directory $versionpath | Sort-Object -Property Name -Descending | Select-Object -First 1",
+        "    $apppath = Join-Path $version '/resources/app'",
+        "}",
         "$loaderpath = Join-Path $apppath 'app_launcher/llqqnt.js'",
         "Remove-Item $loaderpath -Force",
         "$package = Get-Content -Path (Join-Path $apppath 'package.json') -Raw | ConvertFrom-Json",
         "$package.main = './application/app_launcher/index.js'",
-        "Set-Content -Path (Join-Path $apppath 'package.json') -Value ($package | ConvertTo-Json -Depth 10) -Force"
+        "Set-Content -Path (Join-Path $apppath 'package.json') -Value ($package | ConvertTo-Json -Depth 10) -Force",
+        "Write-Host 'LiteLoaderQQNT 插件加载器已安装/卸载完成'"
     ]
 }
