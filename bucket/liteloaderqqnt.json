@@ -36,7 +36,7 @@
             },
             "32bit": {
                 "url": [
-                    "https://github.com/LiteLoaderQQNT/LiteLoaderQQNT/releases/download/$versionLiteLoaderQQNT.zip",
+                    "https://github.com/LiteLoaderQQNT/LiteLoaderQQNT/releases/download/$version/LiteLoaderQQNT.zip",
                     "https://github.com/LiteLoaderQQNT/QQNTFileVerifyPatch/releases/download/DllHijack_1.1.2/dbghelp_x86.dll"
                 ]
             }
