@@ -1,2 +1,2 @@
-cd /d %~dp0
-java -jar ./BlueTeamTools.jar
+@cd /d %~dp0
+@java -jar ./BlueTeamTools.jar

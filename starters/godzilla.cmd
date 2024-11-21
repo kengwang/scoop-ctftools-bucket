@@ -1,2 +1,2 @@
-cd /d %~dp0
-java -jar ./godzilla.jar
+@cd /d %~dp0
+@java -jar ./godzilla.jar
