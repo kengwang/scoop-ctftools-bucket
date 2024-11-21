@@ -1,2 +1,2 @@
-cd /d %~dp0
-java -jar ./Behinder.jar
+@cd /d %~dp0
+@java -jar ./Behinder.jar
