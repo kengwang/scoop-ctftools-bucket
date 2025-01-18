@@ -1,16 +1,20 @@
 {
     "version": "",
+    "license": "",
     "description": "",
     "homepage": "",
-    "license": "",
     "checkver": "github",
-    "suggest": {
-        "python": "python"
-    },
     "url": "",
     "hash": "",
     "autoupdate": {
         "url": ""
     },
-    "bin": "app.py"
+    "persist": "",
+    "bin": "app",
+    "shortcuts": [
+        [
+            "app",
+            "App"
+        ]
+    ]
 }
