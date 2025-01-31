@@ -53,9 +53,6 @@
         "   } }",
         "New-Item -Force -ItemType SymbolicLink -Path $configdir -Value $dir/data"
     ],
-    "pre_uninstall": [
-        "regsvr32 /u /s \"$dir\\NsCopyHook3.dll\""
-    ],
     "post_uninstall": [
         "Remove-Item -Path \"$env:USERPROFILE\\Documents\\NetSarang Computer\\8\\Xftp\" -Force"
     ],
@@ -72,6 +69,7 @@
         "script": [
             "# Require Administrator rights",
             "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
+            "regsvr32 /u /s \"$dir\\NsCopyHook3.dll\"",
             "reg.exe delete \"HKCU\\SOFTWARE\\NetSarang\\Xftp\\8\" /f",
             "reg.exe delete \"HKLM\\SOFTWARE\\NetSarang\\Xftp\\8\" /f *>$null",
             "reg.exe delete \"HKLM\\SOFTWARE\\WOW6432Node\\NetSarang\\Xftp\\8\" /f *>$null"
