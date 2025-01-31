@@ -53,9 +53,11 @@
         "   } }",
         "New-Item -Force -ItemType SymbolicLink -Path $configdir -Value $dir/data"
     ],
-    "post_uninstall":[
-        "Remove-Item -Path \"$env:USERPROFILE\\Documents\\NetSarang Computer\\8\\Xftp\" -Force",
+    "pre_uninstall": [
         "regsvr32 /u /s \"$dir\\NsCopyHook3.dll\""
+    ],
+    "post_uninstall": [
+        "Remove-Item -Path \"$env:USERPROFILE\\Documents\\NetSarang Computer\\8\\Xftp\" -Force"
     ],
     "shortcuts": [
         [
