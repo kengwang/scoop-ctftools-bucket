@@ -93,9 +93,6 @@
             "https://github.com/shadow1ng/fscan/releases/download/$version/fscan_freebsd_armv7",
             "https://github.com/shadow1ng/fscan/releases/download/$version/fscan_mac",
             "https://github.com/shadow1ng/fscan/releases/download/$version/fscan_mac_arm64",
-            "https://github.com/shadow1ng/fscan/releases/download/$version/fscan_mips",
-            "https://github.com/shadow1ng/fscan/releases/download/$version/fscan_mips64",
-            "https://github.com/shadow1ng/fscan/releases/download/$version/fscan_mipsle",
             "https://github.com/shadow1ng/fscan/releases/download/$version/fscan_solaris"
         ]
     }
