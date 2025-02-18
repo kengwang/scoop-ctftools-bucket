@@ -31,5 +31,5 @@
             }
         }
     },
-    "bin": "CloudflareST"
+    "bin": "CloudflareST.exe"
 }
