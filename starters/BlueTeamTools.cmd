@@ -1,2 +1,2 @@
 @cd /d %~dp0
-@java -jar ./BlueTeamTools.jar
+@java -jar ./BlueTeam_ABC_123.jar
