@@ -13,7 +13,7 @@
     "url": "https://github.com/abc123info/BlueTeamTools/releases/download/v1.43/BlueTeamToolsV1.43.zip",
     "hash": "ee631c92ffbf05c90d5d03ff26c5becaa40267d7fce5f2c1522287342a739e32",
     "autoupdate": {
-        "url": "https://github.com/abc123info/BlueTeamTools/releases/download/v$version/BlueTeamToolsV$version.zip"
+        "url": "https://github.com/abc123info/BlueTeamTools/releases/download/v$version/BlueTeamToolsV$version.jar"
     },
     "pre_install": [
         "$content = (Get-Content -Path $(Join-Path $(Find-BucketDirectory -Root -Name $bucket) starters/BlueTeamTools.cmd)) -replace '%%HOME%%', $dir",
