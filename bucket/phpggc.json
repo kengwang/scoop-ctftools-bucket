@@ -1,5 +1,5 @@
 {
-    "version": "313b67f2b5b0f7bdfdadde92e9c890acc5a82302",
+    "version": "df827d956db52df17cbb2c5d7edd93c5a79b5127",
     "description": "PHPGGC is a library of PHP unserialize() payloads along with a tool to generate them, from command line or programmatically.",
     "homepage": "https://github.com/ambionics/phpggc",
     "license": "Apache-2.0",
@@ -10,9 +10,9 @@
     "suggest": {
         "php": "php"
     },
-    "url": "https://github.com/ambionics/phpggc/archive/313b67f2b5b0f7bdfdadde92e9c890acc5a82302.zip",
-    "hash": "1affea52af07574813de46d3ee18a590d560173d05f47c0c189c20a5784aa660",
-    "extract_dir": "phpggc-313b67f2b5b0f7bdfdadde92e9c890acc5a82302",
+    "url": "https://github.com/ambionics/phpggc/archive/df827d956db52df17cbb2c5d7edd93c5a79b5127.zip",
+    "hash": "1a3eba5e85f3a1a17483265fa71e6cb2e7998a0b74233e80e1beffc8126fd6a6",
+    "extract_dir": "phpggc-df827d956db52df17cbb2c5d7edd93c5a79b5127",
     "autoupdate": {
         "url": "https://github.com/ambionics/phpggc/archive/$version.zip",
         "extract_dir": "phpggc-$version"
