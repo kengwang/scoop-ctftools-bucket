@@ -10,7 +10,7 @@
     "url": "https://github.com/wangzhenjjcn/AdobeGenp/releases/download/AdobeGenp-3.5.0-UniversalPath/AdobeGenp-3.5.0-UniversalPath.exe#/AdobeGenp.exe",
     "hash": "079e33038561cb759ca9eebcb74c97c435593469509dfc90cc07a4ca80a2ccdc",
     "autoupdate": {
-        "url": "https://github.com/wangzhenjjcn/AdobeGenp/releases/download/AdobeGenp-$version/AdobeGenp-$version.exe#/AdobeGenp.exe"
+        "url": "https://github.com/wangzhenjjcn/AdobeGenp/releases/download/AdobeGenp-$version/AdobeGenp.exe#/AdobeGenp.exe"
     },
     "bin": "AdobeGenp.exe",
     "shortcuts": [
