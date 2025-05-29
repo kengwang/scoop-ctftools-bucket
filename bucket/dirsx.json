@@ -28,13 +28,13 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/chasingboy/dirsx/releases/download/dirsx-v$version/dirsx-window-amd.zip"
+                "url": "https://github.com/chasingboy/dirsx/releases/download/dirsx-v$version/dirsx-windows-amd.zip"
             },
             "32bit": {
-                "url": "https://github.com/chasingboy/dirsx/releases/download/dirsx-v$version/dirsx-window-amd.zip"
+                "url": "https://github.com/chasingboy/dirsx/releases/download/dirsx-v$version/dirsx-windows-amd.zip"
             },
             "arm64": {
-                "url": "https://github.com/chasingboy/dirsx/releases/download/dirsx-v$version/dirsx-window-arm.zip"
+                "url": "https://github.com/chasingboy/dirsx/releases/download/dirsx-v$version/dirsx-windows-arm.zip"
             }
         }
     },
