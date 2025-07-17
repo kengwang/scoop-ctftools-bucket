@@ -10,15 +10,14 @@
         ]
     },
     "checkver": "github",
-    "url": "https://github.com/abc123info/BlueTeamTools/releases/download/v3.26/BlueTeam_ABC_123.jar#BlueTeamTools.jar",
+    "url": "https://github.com/abc123info/BlueTeamTools/releases/download/v3.26/BlueTeam_ABC_123.jar#/BlueTeamTools.jar",
     "hash": "32fe9d9eb3edb4bed3857797ce8010558a917280e2761df241559817a73f2a16",
     "autoupdate": {
-        "url": "https://github.com/abc123info/BlueTeamTools/releases/download/v$version/BlueTeam_ABC_123.jar"
+        "url": "https://github.com/abc123info/BlueTeamTools/releases/download/v$version/BlueTeam_ABC_123.jar#/BlueTeamTools.jar"
     },
-    "bin": "BlueTeamTools.cmd",
-    "shortcuts": [
+    "bin": [
         [
-            "BlueTeamTools.cmd",
+            "BlueTeamTools.jar",
             "BlueTeamTools"
         ]
     ]
