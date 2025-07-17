@@ -26,14 +26,13 @@
         }
     },
     "url": [
-        "https://github.com/shadow1ng/fscan/releases/download/v2.0.1/checksums.txt",
-        "https://github.com/shadow1ng/fscan/releases/download/v2.0.1/FScan_2.0.1_linux_arm64#fscan_arm64",
-        "https://github.com/shadow1ng/fscan/releases/download/v2.0.1/FScan_2.0.1_linux_x32#fscan32",
-        "https://github.com/shadow1ng/fscan/releases/download/v2.0.1/FScan_2.0.1_linux_x64#fscan",
-        "https://github.com/shadow1ng/fscan/releases/download/v2.0.1/FScan_2.0.1_mac_arm64#fscan_mac_arm64",
-        "https://github.com/shadow1ng/fscan/releases/download/v2.0.1/FScan_2.0.1_mac_x64#fscan_mac_x64",
-        "https://github.com/shadow1ng/fscan/releases/download/v2.0.1/FScan_2.0.1_windows_x32.exe.exe#fscan32.exe",
-        "https://github.com/shadow1ng/fscan/releases/download/v2.0.1/FScan_2.0.1_windows_x64.exe.exe#fscan.exe"
+        "https://github.com/shadow1ng/fscan/releases/download/v2.0.1/FScan_2.0.1_linux_arm64#/fscan_arm64",
+        "https://github.com/shadow1ng/fscan/releases/download/v2.0.1/FScan_2.0.1_linux_x32#/fscan32",
+        "https://github.com/shadow1ng/fscan/releases/download/v2.0.1/FScan_2.0.1_linux_x64#/fscan",
+        "https://github.com/shadow1ng/fscan/releases/download/v2.0.1/FScan_2.0.1_mac_arm64#/fscan_mac_arm64",
+        "https://github.com/shadow1ng/fscan/releases/download/v2.0.1/FScan_2.0.1_mac_x64#/fscan_mac_x64",
+        "https://github.com/shadow1ng/fscan/releases/download/v2.0.1/FScan_2.0.1_windows_x32.exe.exe#/fscan32.exe",
+        "https://github.com/shadow1ng/fscan/releases/download/v2.0.1/FScan_2.0.1_windows_x64.exe.exe#/fscan.exe"
     ],
     "hash": [
         "8a892a1a4527222298b6590e38af4372ab097e45f1fa339128ecce294ff99e6f",
