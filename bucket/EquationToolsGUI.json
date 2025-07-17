@@ -5,7 +5,7 @@
     "homepage": "https://github.com/abc123info/EquationToolsGUI",
     "checkver": "github",
     "url": "https://github.com/abc123info/EquationToolsGUI/releases/download/v0.51/EquationToolsGUI_V0.51.zip#/dl.tmp",
-    "hash": "b8e30e5fb195d0d7d1e9e3e1b2322aa5471647412c30c23c7bcf9d07cdd3f9cc",
+    "hash": "7a594e7eb62bde1365ac42ca5a9444f92a0f9e810ba0023c5563b1e41bdf2f7f",
     "autoupdate": {
         "url": "https://github.com/abc123info/EquationToolsGUI/releases/download/V$version/EquationToolsGUI_V$version.zip#/dl.tmp"
     },
