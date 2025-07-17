@@ -11,7 +11,7 @@
     },
     "checkver": "github",
     "url": "https://github.com/abc123info/BlueTeamTools/releases/download/v3.26/BlueTeam_ABC_123.jar#BlueTeamTools.jar",
-    "hash": "51eb33f68afe4f8f6afc5f567c95a1081e0b5e04ce2bb4d36fd2a3128f1d9614",
+    "hash": "32fe9d9eb3edb4bed3857797ce8010558a917280e2761df241559817a73f2a16",
     "autoupdate": {
         "url": "https://github.com/abc123info/BlueTeamTools/releases/download/v$version/BlueTeam_ABC_123.jar"
     },
