@@ -20,7 +20,7 @@
         ]
     },
     "post_install":[
-        "Move-Item \"Multiple.Database.Utilization.Tools*.jar\" \"Multiple.Database.Utilization.Tools.jar\""
+        "Move-Item -Path \"$dir/Multiple.Database.Utilization.Tools*.jar\" -Destination \"$dir/Multiple.Database.Utilization.Tools.jar\""
     ],
     "persist": "data.db",
     "bin": [
