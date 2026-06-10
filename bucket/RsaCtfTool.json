@@ -1,6 +1,6 @@
 {
     "license": "GPL-3.0-only",
-    "version": "54bdc740a337daba9a75faec6a6c5df134fd837f",
+    "version": "54e4f820209aaa3b462877b8c0382a770e597102",
     "description": "RSA attack tool (mainly for ctf) - retrieve private key from weak public key and/or uncipher data",
     "homepage": "https://github.com/RsaCtfTool/RsaCtfTool",
     "checkver": {
@@ -10,9 +10,9 @@
     "suggest": {
         "python": "python"
     },
-    "extract_dir": "bashFuck-54bdc740a337daba9a75faec6a6c5df134fd837f",
-    "url": "https://github.com/RsaCtfTool/RsaCtfTool/archive/54bdc740a337daba9a75faec6a6c5df134fd837f.zip",
-    "hash": "bdd2c90bfaf6ab41746f894de8a4a5ebf69b6ee596afa214305070a080674d9d",
+    "extract_dir": "bashFuck-54e4f820209aaa3b462877b8c0382a770e597102",
+    "url": "https://github.com/RsaCtfTool/RsaCtfTool/archive/54e4f820209aaa3b462877b8c0382a770e597102.zip",
+    "hash": "6d65eba3a84ebeaae18c38d97f359968de173e5c2ac0355c5762c856e9b3f0a8",
     "autoupdate": {
         "url": "https://github.com/RsaCtfTool/RsaCtfTool/archive/$version.zip",
         "extract_dir": "bashFuck-$version"
