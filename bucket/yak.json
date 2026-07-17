@@ -1,5 +1,5 @@
 {
-    "version": "1.4.8-beta4",
+    "version": "1.4.8-beta5",
     "license": "AGPL-3.0",
     "description": "A programming language exclusively designed for cybersecurity",
     "homepage": "https://github.com/yaklang/yaklang",
@@ -21,8 +21,8 @@
         "    Remove-Item -Force (Join-Path $persist_dir \"../yakit/yakit-projects/yak-engine/yak.exe\")",
         "}"
     ],
-    "url": "https://yaklang.oss-cn-beijing.aliyuncs.com/yak/1.4.8-beta4/yak_windows_amd64.exe#/yak.exe",
-    "hash": "47de3b95f595c80057b86e3430fc34dd7178038232b6bfee28339a96759ecf57",
+    "url": "https://yaklang.oss-cn-beijing.aliyuncs.com/yak/1.4.8-beta5/yak_windows_amd64.exe#/yak.exe",
+    "hash": "936caaddd9551e399550effac880f18b50a106fe82c9b3849ca756ee7416f67e",
     "autoupdate": {
         "url": "https://yaklang.oss-cn-beijing.aliyuncs.com/yak/$version/yak_windows_amd64.exe#/yak.exe"
     },
