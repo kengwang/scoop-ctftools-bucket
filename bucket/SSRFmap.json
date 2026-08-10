@@ -1,5 +1,5 @@
 {
-    "version": "69103b27f5898d9707630dc572798df63727b90f",
+    "version": "290e07d75c52d68e021b6d0b4200c2a41ea20365",
     "description": "Automatic SSRF fuzzer and exploitation tool",
     "homepage": "https://github.com/swisskyrepo/SSRFmap",
     "license": "MIT",
@@ -10,9 +10,9 @@
     "suggest": {
         "python": "python"
     },
-    "url": "https://github.com/swisskyrepo/SSRFmap/archive/69103b27f5898d9707630dc572798df63727b90f.zip",
-    "extract_dir": "SSRFmap-69103b27f5898d9707630dc572798df63727b90f",
-    "hash": "454b59be36fb59dbbdd1d1e0d6ca35c021ff382ca6a608cfffb17ae511e8c106",
+    "url": "https://github.com/swisskyrepo/SSRFmap/archive/290e07d75c52d68e021b6d0b4200c2a41ea20365.zip",
+    "extract_dir": "SSRFmap-290e07d75c52d68e021b6d0b4200c2a41ea20365",
+    "hash": "fcf5da59c81dc904396407be7fe5340660868d9e71a125dc21ce47c6906ce1fd",
     "autoupdate": {
         "url": "https://github.com/swisskyrepo/SSRFmap/archive/$version.zip",
         "extract_dir": "SSRFmap-$version"
