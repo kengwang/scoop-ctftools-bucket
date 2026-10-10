@@ -1,28 +1,28 @@
 {
-    "version": "1.7.3",
+    "version": "1.7.8",
     "license": "GPL-3.0-only",
     "description": "Adversary Emulation Framework",
     "homepage": "https://github.com/BishopFox/sliver",
     "checkver": "github",
     "url": [
-        "https://github.com/BishopFox/sliver/releases/download/v1.7.3/sliver-client_linux-amd64",
-        "https://github.com/BishopFox/sliver/releases/download/v1.7.3/sliver-client_macos-amd64",
-        "https://github.com/BishopFox/sliver/releases/download/v1.7.3/sliver-client_macos-arm64",
-        "https://github.com/BishopFox/sliver/releases/download/v1.7.3/sliver-client_windows-amd64.exe",
-        "https://github.com/BishopFox/sliver/releases/download/v1.7.3/sliver-server_linux-amd64",
-        "https://github.com/BishopFox/sliver/releases/download/v1.7.3/sliver-server_darwin-amd64",
-        "https://github.com/BishopFox/sliver/releases/download/v1.7.3/sliver-server_darwin-arm64",
-        "https://github.com/BishopFox/sliver/releases/download/v1.7.3/sliver-server_windows-amd64.exe"
+        "https://github.com/BishopFox/sliver/releases/download/v1.7.8/sliver-client_linux-amd64",
+        "https://github.com/BishopFox/sliver/releases/download/v1.7.8/sliver-client_macos-amd64",
+        "https://github.com/BishopFox/sliver/releases/download/v1.7.8/sliver-client_macos-arm64",
+        "https://github.com/BishopFox/sliver/releases/download/v1.7.8/sliver-client_windows-amd64.exe",
+        "https://github.com/BishopFox/sliver/releases/download/v1.7.8/sliver-server_linux-amd64",
+        "https://github.com/BishopFox/sliver/releases/download/v1.7.8/sliver-server_darwin-amd64",
+        "https://github.com/BishopFox/sliver/releases/download/v1.7.8/sliver-server_darwin-arm64",
+        "https://github.com/BishopFox/sliver/releases/download/v1.7.8/sliver-server_windows-amd64.exe"
     ],
     "hash": [
-        "b0e328a131e4d679e9b268552db99ca2d46051b9205a67f9b7f7c1628983daae",
-        "4a7c7225cdacec2240c77ec311db786d3f3d6135c10edda250ba06ebc3929825",
-        "3249429f37f55f05ebed2dd97d14593cbf567f3397fcaba3af04249b2fbf6be6",
-        "e99700f28acef395b46a34c09f41db8416f158b0e2308f58dacc3b5179e058dc",
-        "e3216ecd12f6e7e97cb4588bb6d85c70eca3bdfad8b0818ffd53ccb2e357ccc8",
-        "d4066b46df536d3748a75ee8883dfe8807c49b09df65ba2dcfd36703e8852774",
-        "6c5bb97e3473f9cfa7e26f53b2ce3d9239b37b9431c9b2a2dca9991794455f3b",
-        "9a096f34d16ea5f18b47b48a7e5b1b3e20e6f2edd73d8c22a474d330c948ad6f"
+        "a1bfe9ee9807017b83689384d9a169db497643d5b2385d24a942d6d05c5ef701",
+        "3a93112cc30ebae5dd7d31912ab2b52b976c1d2bfd398d4160481457a51c528a",
+        "2115cf1c908f2affcb0812c0d3d9c450189a336204d229d450738fc2d00f2292",
+        "7c500d4ae84d792e4bb3f4bc89a0f325688f6e7b7f0574a6718bb99d30b305cb",
+        "e70ae77590f5f0a8aafe8e11685f2cd17b11e0e02d37534412b99a411fd6e3e0",
+        "01e41a17a7558b98468e373f80243c1bc51307bd9df1875fd8639aaea036e00c",
+        "e18abfe08819086628ef1d027ada850e0067bb339255bd3c7396580ca9d48b9e",
+        "f89be273eaf594c5642494f2bfe17c66b1f9d80ea09d308231f27e9a667fcea7"
     ],
     "autoupdate": {
         "url": [
