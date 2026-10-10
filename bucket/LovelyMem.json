@@ -1,27 +1,18 @@
 {
-    "version": "0.85",
-    "description": "基于Memprocfs和Volatility的可视化内存取证工具",
+    "version": "2.5.0",
+    "description": "基于 MemProcFS 和 Volatility 的可视化内存取证与应急响应工具",
     "homepage": "https://github.com/Tokeii0/LovelyMem",
-    "license": "Unlicense",
-    "suggest": {
-        "python": "python"
-    },
+    "license": "AGPL-3.0-only",
     "checkver": "github",
-    "url": "https://github.com/Tokeii0/LovelyMem/releases/download/v0.85/Lovelymemv0.85_No_symbols.7z",
-    "hash": "fdaf508127583de937837d89d56d2f9b2d4afa7eb406491d662b05ec8ede23ab",
-    "pre_install": [
-        "$content = (Get-Content -Path $(Join-Path $(Find-BucketDirectory -Root -Name $bucket) starters/LovelyMem.cmd)) -replace '%%HOME%%', $dir",
-        "Set-Content -Path $(Join-Path $dir LovelyMem.cmd) -Value $content -Encoding UTF8"
-    ],
-    "bin": [
-        [
-            "main.py",
-            "LovelyMem"
-        ]
-    ],
+    "url": "https://github.com/Tokeii0/LovelyMem/releases/download/v2.5.0/Lovelymem-V2-2.5.0-windows-x64.exe#/LovelyMem.exe",
+    "hash": "c804962552c98db1eb3498e6e8e7d7deb28a7929d626649400d84e6856c3362c",
+    "autoupdate": {
+        "url": "https://github.com/Tokeii0/LovelyMem/releases/download/v$version/Lovelymem-V2-$version-windows-x64.exe#/LovelyMem.exe"
+    },
+    "bin": "LovelyMem.exe",
     "shortcuts": [
         [
-            "LovelyMem.cmd",
+            "LovelyMem.exe",
             "LovelyMem"
         ]
     ]

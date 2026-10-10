@@ -7,9 +7,9 @@ jobs:
     name: IssueHandler
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@f548e57e544e1ff5a4c46bf1e1b8685f8e4a348a
       - name: IssueHandler
-        uses: ScoopInstaller/GithubActions@main
+        uses: ScoopInstaller/GithubActions@a709983c0692a8a853c288cf5e9bf14658107936
         if: github.event.action == 'opened' || (github.event.action == 'labeled' && contains(github.event.issue.labels.*.name, 'verify'))
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

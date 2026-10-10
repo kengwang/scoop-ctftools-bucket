@@ -14,14 +14,15 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Checkout Bucket
-        uses: actions/checkout@main
+        uses: actions/checkout@f548e57e544e1ff5a4c46bf1e1b8685f8e4a348a
         with:
           fetch-depth: 2
           path: my_bucket
       - name: Checkout Scoop
-        uses: actions/checkout@main
+        uses: actions/checkout@f548e57e544e1ff5a4c46bf1e1b8685f8e4a348a
         with:
           repository: ScoopInstaller/Scoop
+          ref: b588a06e41d920d2123ec70aee682bae14935939
           path: scoop_core
       - name: Init and Test
         shell: powershell
@@ -34,14 +35,15 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Checkout Bucket
-        uses: actions/checkout@main
+        uses: actions/checkout@f548e57e544e1ff5a4c46bf1e1b8685f8e4a348a
         with:
           fetch-depth: 2
           path: my_bucket
       - name: Checkout Scoop
-        uses: actions/checkout@main
+        uses: actions/checkout@f548e57e544e1ff5a4c46bf1e1b8685f8e4a348a
         with:
           repository: ScoopInstaller/Scoop
+          ref: b588a06e41d920d2123ec70aee682bae14935939
           path: scoop_core
       - name: Init and Test
         shell: pwsh
