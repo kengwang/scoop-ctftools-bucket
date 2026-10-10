@@ -1,5 +1,5 @@
 {
-    "version": "11.4.0",
+    "version": "11.5.0",
     "description": "The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis",
     "homepage": "https://github.com/gchq/CyberChef",
     "license": "Apache-2.0",
@@ -7,8 +7,8 @@
         "url": "https://api.github.com/repos/gchq/CyberChef/releases/latest",
         "regex": "releases/download/v([\\d.]+)/CyberChef_(?<commit>[0-9a-f]+)\\.zip"
     },
-    "url": "https://github.com/gchq/CyberChef/releases/download/v11.4.0/CyberChef_49d1a5634a67a3b806c6db0fdca7dcecb41a776c.zip",
-    "hash": "423635c4fe05eba1be1e000aae3a82c711c5599c1bc1c0b625a02d344bd51bc4",
+    "url": "https://github.com/gchq/CyberChef/releases/download/v11.5.0/CyberChef_8cd426dd4f40f1423912d5fad91b578a86a65112.zip",
+    "hash": "f6478925d3eaa16ec08626a85f5b85eed10d531a5e18700615fed7ecb024cccf",
     "autoupdate": {
         "url": "https://github.com/gchq/CyberChef/releases/download/v$version/CyberChef_$matchCommit.zip"
     },
