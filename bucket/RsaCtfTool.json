@@ -1,6 +1,6 @@
 {
     "license": "GPL-3.0-only",
-    "version": "af87bb487666b1bf3070e1bb058d97b78a342808",
+    "version": "c107d86e6aa87f029ce77244debb895da20522d1",
     "description": "RSA attack tool (mainly for ctf) - retrieve private key from weak public key and/or uncipher data",
     "homepage": "https://github.com/RsaCtfTool/RsaCtfTool",
     "checkver": {
@@ -10,9 +10,9 @@
     "suggest": {
         "python": "python"
     },
-    "extract_dir": "RsaCtfTool-af87bb487666b1bf3070e1bb058d97b78a342808",
-    "url": "https://github.com/RsaCtfTool/RsaCtfTool/archive/af87bb487666b1bf3070e1bb058d97b78a342808.zip",
-    "hash": "cc6138462c0633ed8098db051c87c7020bb604b3d1c0b9a13d637937ba0c4c1d",
+    "extract_dir": "RsaCtfTool-c107d86e6aa87f029ce77244debb895da20522d1",
+    "url": "https://github.com/RsaCtfTool/RsaCtfTool/archive/c107d86e6aa87f029ce77244debb895da20522d1.zip",
+    "hash": "57bf4a7698a231f027749f9f2caf1e48c48dac6fff7d54997c7a301730556e12",
     "autoupdate": {
         "url": "https://github.com/RsaCtfTool/RsaCtfTool/archive/$version.zip",
         "extract_dir": "RsaCtfTool-$version"
