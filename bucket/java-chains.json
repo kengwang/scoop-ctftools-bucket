@@ -1,5 +1,5 @@
 {
-    "version": "2.0.0-beta7",
+    "version": "2.0.0",
     "license": "Unlicense",
     "description": "Vulhub Vulnerability Reproduction Designated Platform",
     "homepage": "https://github.com/vulhub/java-chains",
@@ -15,9 +15,9 @@
         "jsonpath": "$.tag_name",
         "regex": "^v?(.*)$"
     },
-    "url": "https://github.com/vulhub/java-chains/releases/download/v2.0.0-beta7/java-chains-2.0.0-beta7.tar.gz",
-    "hash": "9cd98e2df6ccdf00e90553fc3c23257371ca7c06d8c907211e4a686b7289d46c",
-    "extract_dir": "java-chains-2.0.0-beta7",
+    "url": "https://github.com/vulhub/java-chains/releases/download/v2.0.0/java-chains-2.0.0.tar.gz",
+    "hash": "6f532861c9bff4b15d01acf8d4d6a99451dc32ba6984dfe8bfcc9a1404e6da40",
+    "extract_dir": "java-chains-2.0.0",
     "autoupdate": {
         "url": "https://github.com/vulhub/java-chains/releases/download/v$version/java-chains-$version.tar.gz",
         "extract_dir": "java-chains-$version"
