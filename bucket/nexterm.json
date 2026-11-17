@@ -41,7 +41,6 @@
         }
     },
     "pre_install": "Remove-Item \"$dir\\MicrosoftEdgeWebview2Setup.exe\", \"$dir\\Uninstall.exe\" -Force",
-    "notes": "Run 'scoop update nexterm' for updates.",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
